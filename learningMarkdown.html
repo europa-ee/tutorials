@@ -3,8 +3,8 @@
   <head>
     <title>Learning Markdown</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Ernest Guevarra" />
-    <meta name="date" content="2020-06-08" />
+    <meta name="author" content="" />
+    <meta name="date" content="2020-06-09" />
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
   <body>
@@ -13,8 +13,7 @@ class: center, middle, inverse, title-slide
 
 # Learning Markdown
 ## A short tutorial for Class 3EE
-### Ernest Guevarra
-### 2020-06-08
+### 2020-06-09
 
 ---
 
@@ -25,7 +24,7 @@ class: center, middle, inverse, title-slide
 
 # What is Markdown?
 
-* Is a lightweight markup language that you can use to add formatting elements to plaintext text documents
+* Is a lightweight markup language that you can use to add formatting elements to plain text text documents
 
 * Created by John Gruber in 2004
 
@@ -87,7 +86,7 @@ Sofia
 
 class: center, middle
 
-## Are you ready to write your newpaper articles in Markdown?
+## Are you ready to write your newspaper articles in Markdown?
 
 ---
 
@@ -172,7 +171,179 @@ class: center, middle
 
 * This is probably the easiest step in the process
 
-* Most of you have written your newspaper articles using **Google Docs** already
+* Most of you have written your newspaper articles using **Google Docs** already, If you have, then you just need to do a simple copy and paste of your article
+
+* Your Markdown document should look something like this by now:
+
+```MD
+---
+title: Title of this article
+author: My Name
+date: "2020-06-09"
+---
+
+This is my article about a topic that was assigned to me by the 
+teacher. It is a very interesting topic. I like writing about this 
+topic. I hope many of my classmates will read my article.
+```
+
+---
+
+# Step 4: Style your Markdown document
+
+* You can now start adding some styling or formatting to your document
+
+* This is done using standard Markdown styling or formatting rules. These rules are also called **syntax**.
+
+* The next slides show commonly used Markdown syntax for styling or formatting documents
+
+---
+
+.pull-left[
+
+### Markdown syntax
+
+* ```*italics*``` or ```_italics_```
+
+* ```**bold**``` or ```__bold__```
+
+* ```&gt; block quote```
+
+* ```# Header 1```
+
+* ```## Header 2```
+
+* ```### Header 3```
+
+* ```#### Header 4```
+
+]
+
+
+.pull-right[
+
+### Resulting output
+
+* *italics*
+
+* **bold**
+
+* &gt; block quote
+
+* # Header 1
+
+* ## Header 2
+
+* ### Header 3
+
+* #### Header 4
+
+]
+
+---
+
+.pull-left[
+
+### Markdown syntax
+
+* ```[link to 3EE website](https://www.europa-ee.org.uk)```
+
+* adding an image: ```![](path/to/light-bulb.png)```
+
+]
+
+
+.pull-right[
+
+### Resulting output
+
+* [link to 3EE website](https://www.europa-ee.org.uk)
+
+* adding an image: ![](figures/light-bulb.png)
+
+]
+
+---
+
+class: center, middle
+
+# We now try to apply these rules to the sample newspaper article in Markdown document we saw earlier
+
+---
+
+# This syntax ...
+
+```MD
+---
+title: Title of this article
+author: My Name
+date: "2020-06-09"
+---
+
+This is **my** article about a _topic_ that was assigned to me by the 
+teacher. It is a very interesting topic. 
+
+&gt; I like writing about this topic. 
+
+# I hope many of my classmates will read my article.
+```
+
+---
+
+# Will look like this ...
+
+### Title of this article
+
+#### My Name
+
+##### 2020-06-09
+
+This is **my** article about a _topic_ that was assigned to me by the 
+teacher. It is a very interesting topic. 
+
+&gt; I like writing about this topic. 
+
+# I hope many of my classmates will read my article.
+
+---
+
+# Step 5: Naming your Markdown document
+
+* Do this by tapping the upper right hand corner of the **Google Docs** that contains the placeholder name for the file (usually says *Untitled Document*)
+
+![](figures/renaming_google_docs1.png)
+
+* The filename of the Markdown document should always start with the ***date*** you wrote the document. It should be in this format: `YYYY-MM-DD`
+
+* After the ***date***, you can now add any name you would like to give your document as its filename. The easiest is to use the title of your article like this: `2020-06-09-title-of-this-article`
+
+![](figures/renaming_google_docs2.png)
+
+---
+
+# Step 6: Output as a text file
+
+* As mentioned earlier, we are just using **Google Docs** as it is the most convenient and accessible tool for you to write Markdown
+
+* But we need to save the Markdown document you created into a plain text file (something that ends in `.txt`)
+
+---
+
+# Step 6: Output as a text file
+
+* **Google Docs** allows this kind of output. First, click on `File`, then select the `Download` option and then select the `Plain text (.txt)` option
+
+![](figures/download_as_text.png)
+
+* You will now have downloaded your Markdown file in plain text. You can find your file in the default download directory or folder of the device you are using
+
+---
+
+class: center, middle
+
+## Congratulations! You have just produced your first ever Markdown document!
+
+Make sure you keep the plain text file that you have created so that we can upload that to the online newspaper for publication.
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
