@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Publishing Markdown</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="" />
+    <meta name="date" content="2020-06-23" />
+    <script src="libs/htmlwidgets/htmlwidgets.js"></script>
+    <script src="libs/d3/d3.min.js"></script>
+    <script src="libs/dagre/dagre-d3.min.js"></script>
+    <link href="libs/mermaid/dist/mermaid.css" rel="stylesheet" />
+    <script src="libs/mermaid/dist/mermaid.slim.min.js"></script>
+    <link href="libs/DiagrammeR-styles/styles.css" rel="stylesheet" />
+    <script src="libs/chromatography/chromatography.js"></script>
+    <script src="libs/DiagrammeR-binding/DiagrammeR.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Publishing Markdown
+## A short tutorial for Class 3EE
+### 2020-06-23
+
+---
+
+
+
+
+
+
+class: center, middle
+
+## Congratulations for completing the first part of this tutorial called "Learning Markdown"!
+
+## You are now a member of Class 3EE's Online News Team!
+
+---
+
+# Recap
+
+By now, you would have:
+
+* Learned what Markdown is and what it's used for;
+
+* Learned how to write Markdown, the front matter and the syntax;
+
+* Written your own Markdown document using text from your newspaper articles; and,
+
+* Saved your Markdown document waiting for publication online.
+
+---
+
+class: center, middle
+
+## Now you are ready to publish your Markdown document online.
+
+---
+
+# Overview of publishing a Markdown document online
+
+* Markdown documents on their own are just lines of text and code that include information on what the document would and should look like when published
+
+* The code and syntax that you have placed in your Markdown document needs to be read and interpreted by a computer who understands Markdown language. This is called `parsing` of the Markdown document and the computer that knows how to read and interpret Markdown is called a `parser`
+
+* After `parsing`, the computer will then convert your Markdown document into another format that is ready for online publication. This format is called `HTML` format
+
+* Once converted, your document is then published online ready to be viewed by yourself and others on the internet
+
+---
+
+# Typical workflow of publishing a Markdown document online
+
+<div id="htmlwidget-dc5141ebbce9827b1f3d" style="width:1008px;height:200px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-dc5141ebbce9827b1f3d">{"x":{"diagram":"\n  graph LR\n    X(START) --> A[<center>1.<br/>Write<br/>Markdown<br/>document<\/center>] \n    A        --> B[<center>2.<br/>Send Markdown<br/>document to<br/>a Markdown<br/>interpreter/parser<\/center>]\n    B        --> C[<center>3.<br/>Markdown<br/>document is<br/>converted<br/>to HTML<\/center>]\n    C        --> D[<center>4.<br/>HTML is<br/>published<br/>online<\/center>]\n    D        --> Y(END)\n  "},"evals":[],"jsHooks":[]}</script>
+
+---
+
+# Our workflow for publishing Markdown to online newspaper
+
+<div id="htmlwidget-a88fcb58b5156842f042" style="width:864px;height:200px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a88fcb58b5156842f042">{"x":{"diagram":"\n  graph LR\n    X(START) --> A[<center>1.<br/>Write<br/>Markdown<br/>document<\/center>] \n    A        --> B[<center>2.<br/>Send Markdown<br/>document to<br/>Hugo framework<br/>via GitHub<\/center>]\n    B        --> C[<center>3.<br/>Send<br/>Markdown<br/>document in<br/>Hugo framework<br/>to Netlify<br/>through GitHub<\/center>]\n    C        --> D[<center>4.<br/>Netlify converts<br/>Markdown and<br/>publishes HTML<br/>online<\/center>]\n    D        --> Y(END)\n  "},"evals":[],"jsHooks":[]}</script>
+
+---
+
+# Our workflow for publishing Markdown to online newspaper
+
+* You will notice that in our workflow, all we have to do are **Step 1** and **Step 2**.
+
+* **Step 3** and **Step 4** are all done automatically for us.
+
+* The online tools that help us with **Step 3** and **Step 4** are **GitHub**, **Hugo**, and **Netlify**
+
+&lt;img src="https://miro.medium.com/max/1400/1*pUZiZ11l8uqsNgRgnW6-Zg.png" width="33.3%" /&gt;&lt;img src="https://d33wubrfki0l68.cloudfront.net/c38c7334cc3f23585738e40334284fddcaf03d5e/2e17c/images/hugo-logo-wide.svg" width="33.3%" /&gt;&lt;img src="https://www.netlify.com/img/press/logos/full-logo-light.svg" width="33.3%" /&gt;
+
+---
+
+# Our workflow for publishing Markdown to online newspaper
+
+* By now, you would have completed **Step 1** already after our first tutorial.
+
+* We will now focus on completing **Step 2**.
+
+* For this step, you will need:
+
+    - A computer that can get on the internet;
+
+    - The Markdown document/s that you have already converted into Markdown;
+
+    - Permission from your parents and a little bit of help in doing all the online stuff;
+    
+---
+
+class: center, middle
+
+## Ready to start?
+
+---
+
+## Sign-in to GitHub
+
+* Our most important tool for **Step 2** is **GitHub**
+
+* **GitHub** is an online tool used mostly by people who write code for developing various kinds of software or for creating various online materials such as websites. **GitHub** allows its users to keep or save their code into repositories and **GitHub** provides tools for sending different kinds of code to its specific interpreter or parser to produce output.
+
+* We have created generic **GitHub** accounts for each member of the Class 3EE News Team. Details of your accont have been provided to your parents. Please ask them for this and ask them to help you log-in.
+
+* Sign in to **GitHub** at https://github.com/login using the login details provided
+
+---
+
+## Open the europa-ee/news repository
+
+* Once you have signed in, you will see the following on your screen:
+
+![](figures/github1.png)
+
+* On the left-hand side of the screen you will see under **Repositories** the **europa-ee/news** repository. Click this link.
+
+---
+
+## Open the content directory in the europa-ee/news repository
+
+![](figures/github2.png)
+
+---
+
+## Open the post directory in the content directory in the europa-ee/news repository
+
+![](figures/github3.png)
+
+---
+
+## Click on upload files to upload your Markdown document
+
+![](figures/github4.png)
+
+---
+
+## Drag and drop your Markdown document or click on choose your files
+
+![](figures/github5.png)
+
+---
+
+## Choose your Markdown document file to upload
+
+![](figures/github6.png)
+
+---
+
+## Check that your file has been uploaded
+
+* If you see your Markdown document file as below, then you know that you have successfully uploaded your document
+
+![](figures/github7.png)
+
+---
+
+## Commit your changes
+
+* Once you have uploaded your Markdown document, you will need to commit the changes you have made to the **europa-ee/news** repository
+
+* Click on commit changes
+
+![](figures/github8.png)
+
+---
+
+## Create a pull request
+
+* So that your changes can be considered for publication online, you need to make a pull request.
+
+* A pull request is the way for you to tell the **editor** of the online publication that you have uploaded your document.
+
+![](figures/github9.png)
+
+---
+
+## Create a pull request
+
+* Confirm the pull request
+
+![](figures/github10.png)
+
+---
+
+## Create a pull request
+
+![](figures/github11.png)
+
+---
+
+class: center, middle
+
+## You have now successfully submitted your article for publication.
+
+## The editor will review your submission, make edits to your text and Markdown syntax as needed and within at most an hour from submission, your article will be available online.
+
+## You will be notified once the article is online
+
+---
+
+class: center, middle
+
+## If you have more than one article that you would like to publish online, just repeat the process above for each article.
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
