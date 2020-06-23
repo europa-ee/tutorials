@@ -54,6 +54,16 @@ class: center, middle
 
 ---
 
+# Things you need:
+
+* A computer that can get on the internet;
+
+* The Markdown document/s that you have already converted into Markdown;
+
+* Permission from your parents and a little bit of help in doing all the online stuff;
+
+---
+
 # Overview of publishing a Markdown document online
 
 * Markdown documents on their own are just lines of text and code that include information on what the document would and should look like when published
@@ -245,3 +255,19 @@ class: center, middle
 class: center, middle
 
 ## If you have more than one article that you would like to publish online, just repeat the process above for each article.
+
+* You will notice that in our workflow, all we have to do are **Step 1** and **Step 2**. 
+
+* **Step 3** and **Step 4** are all done automatically for us.
+
+* The online tools that help us are **GitHub** and **Netlify**
+
+.pull-left[
+<p align="center"><img src="https://avatars1.githubusercontent.com/u/583231?s=400&v=4" width="250px" /></p>
+]
+
+.pull-right[
+<p align="center"><img src="https://www.netlify.com/img/press/logos/full-logo-light.svg" width="250px" /></p>
+]
+
+---
