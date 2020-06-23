@@ -1,0 +1,119 @@
+---
+title: "Publishing Markdown"
+subtitle: "A short tutorial for Class 3EE"  
+author: ""
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF"
+)
+```
+
+# Recap
+
+By now, you would have:
+
+* Learned what Markdown is and what it's used for;
+
+* Learned how to write Markdown, the front matter and the syntax;
+
+* Written your own Markdown document using text from your newspaper articles; and,
+
+* Saved your Markdown document waiting for publication online.
+
+---
+
+class: center, middle
+
+## Now you are ready to publish your Markdown document online.
+
+---
+
+# Things you need:
+
+* A computer that can get on the internet;
+
+* The Markdown document/s that you have already converted into Markdown;
+
+* Permission from your parents and a little bit of help in doing all the online stuff;
+
+---
+
+# Overview of publishing a Markdown document online
+
+* Markdown documents on their own are just lines of text and code that include information on what the document would and should look like when published
+
+* The code and syntax that you have placed in your Markdown document needs to be read and interpreted by a computer who understands Markdown language. This is called `parsing` of the Markdown document and the computer that knows how to read and interpret Markdown is called a `parser`
+
+* After `parsing`, the computer will then convert your Markdown document into another format that is ready for online publication. This format is called `HTML` format
+
+* Once converted, your document is then published online ready to be viewed by yourself and others on the internet
+
+---
+
+# Typical workflow of publishing a Markdown document online
+
+```{r workflow1, echo = FALSE, eval = TRUE, fig.align = "center", fig.width = 14}
+DiagrammeR::mermaid("
+  graph LR
+    X(START) --> A[<center>1.<br/>Write<br/>Markdown<br/>document</center>] 
+    A        --> B[<center>2.<br/>Send Markdown<br/>document to<br/>a Markdown<br/>interpreter/parser</center>]
+    B        --> C[<center>3.<br/>Markdown<br/>document is<br/>converted<br/>to HTML</center>]
+    C        --> D[<center>4.<br/>HTML is<br/>published<br/>online</center>]
+    D        --> Y(END)
+  ", 
+  height = 200)
+```
+
+---
+
+# Our workflow for publishing Markdown to online newspaper
+
+```{r workflow2, echo = FALSE, eval = TRUE, fig.align = "center", fig.width = 14}
+DiagrammeR::mermaid("
+  graph LR
+    X(START) --> A[<center>1.<br/>Write<br/>Markdown<br/>document</center>] 
+    A        --> B[<center>2.<br/>Send Markdown<br/>document to<br/>GitHub</center>]
+    B        --> C[<center>3.<br/>GitHub sends<br/>Markdown<br/>document to<br/>Netlify</center>]
+    C        --> D[<center>4.<br/>Netlify converts<br/>Markdown and<br/>publishes HTML<br/>online</center>]
+    D        --> Y(END)
+  ", 
+  height = 200)
+```
+
+---
+
+# Our workflow for publishing Markdown to online newspaper
+
+* You will notice that in our workflow, all we have to do are **Step 1** and **Step 2**. 
+
+* **Step 3** and **Step 4** are all done automatically for us.
+
+* The online tools that help us are **GitHub** and **Netlify**
+
+.pull-left[
+<p align="center"><img src="https://avatars1.githubusercontent.com/u/583231?s=400&v=4" width="250px" /></p>
+]
+
+.pull-right[
+<p align="center"><img src="https://www.netlify.com/img/press/logos/full-logo-light.svg" width="250px" /></p>
+]
+
+---
